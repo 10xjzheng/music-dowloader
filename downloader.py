@@ -61,6 +61,7 @@ def download_from_url(url, dst):
     else:
         first_byte = 0
     if first_byte >= file_size:
+        print(dst + ' 文件已存在')
         return file_size
     header = {"Range": "bytes=%s-%s" % (first_byte, file_size)}
     pbar = tqdm(
@@ -246,5 +247,6 @@ if __name__ == '__main__':
     if not os.path.exists(save_path):
         os.makedirs(save_path)
     for i, song in enumerate(songs):
-        download_from_url(song.url, save_path + '/' +song.title + '.mp3')
+        dst = save_path + '/' + song.title.replace('/', ' ') + '.mp3'
+        download_from_url(song.url, dst)
     print('================================下载完成===============================')
