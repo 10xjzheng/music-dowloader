@@ -23,7 +23,8 @@ optional arguments:
 
   -t TO [TO ...], --to TO [TO ...]
                         adds the name of directory to save songs
-## 获取歌单ID
+## Example：
+### 获取歌单ID
 ![res1](/img/a.png)
- ## 效果图
+### 效果图
 ![res2](/img/b.png)
