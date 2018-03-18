@@ -1,5 +1,5 @@
 # music-dowloader
-##下载虾米音乐到本地并上传至网易云音乐云盘，暂时只完成下载部分，上传还未完成
+##下载虾米音乐到本地
 ## 使用说明：
 usage: download.py [-h] [-v] [-s SONG [SONG ...]] [-a ALBUM [ALBUM ...]]
                    [-p PLAYLIST [PLAYLIST ...]] [-t TO [TO ...]]
