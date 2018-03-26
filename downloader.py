@@ -54,7 +54,6 @@ def download_from_url(url, dst):
     """
     file_info = urlopen(url).info()
     file_size = int(file_info.get('Content-Length', -1))
-    os.path.exists(save_path)
 
     if os.path.exists(dst):
         first_byte = os.path.getsize(dst)
